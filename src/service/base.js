@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-const baseURL = 'https://net-iota-three.vercel.app/'
+const vercelURL = 'https://net-iota-three.vercel.app/'
 
-axios.defaults.baseURL = baseURL
+axios.defaults.baseURL = vercelURL
 
 export function get(url, params) {
   return axios.get(url, {
